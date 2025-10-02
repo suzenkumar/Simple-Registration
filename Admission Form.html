@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Admission Form Sovarampur High School</title>
+    <style>
+      h1 {
+        text-align: center;
+        color: blue;
+        font-weight: bold;
+        font-style: italic;
+      }
+      h3 {
+        color: red;
+      }
+      #submit {
+        align-items: center;
+        background-color: green;
+        color: white;
+        width: 100px;
+        height: 30px;
+        margin-left: 15px;
+      }
+      #reset {
+        align-items: center;
+        background-color: red;
+        color: white;
+        width: 100px;
+        height: 30px;
+        margin-left: 15px;
+      }
+
+      #print {
+        align-items: center;
+        background-color: rgb(199, 30, 229);
+        color: white;
+        width: 100px;
+        height: 30px;
+        margin-left: 15px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <h1>Admission From Sovarampur High School</h1>
+
+    <div>
+      <u><h3>Student Information</h3></u>
+      <br />
+      <ul>
+        <li>
+          <label>Student's Name:</label>
+          <input type="text" name="Studentname"  id="name"/>
+        </li>
+        <br />
+        <li>
+          <label>Date Of Birth:</label>
+          <input type="date" name="Dateofbirth"  id="dob" />
+          <label>(MM/DD/YYYY)</label>
+        </li>
+        <br />
+        <li>
+          <label>Gender:</label>
+
+          <input type="radio" name="gender" value="Male" type="checkbox" />
+          <label>Male</label>
+          <input type="radio" name="gender" value="Female" />
+          <label>Female</label>
+          <input type="radio" name="gender" value="Prefer not to say" />
+          <label>Prefer not to say</label>
+        </li>
+        <br />
+        <li>
+          <label>Residental Address:</label>
+
+          <textarea  id="location"></textarea>
+        </li>
+        <br />
+        <li>
+          <label>City:</label>
+          <input type="text" name="City"   />
+          <label>State:</label>
+          <input type="text" name="State"   />
+          <label>Zip:</label>
+          <input type="number" name="Zip"  id="zip" />
+        </li>
+        <br />
+      </ul>
+    </div>
+    <div>
+      <u><h3>Parent/Guardian Information</h3></u>
+      <ul>
+        <br />
+        <li>
+          <label>Parent/Guardian Name:</label>
+          <input type="text" name="Parent/Guardianname"  id="name" />
+        </li>
+        <br />
+        <li>
+          <label>Relationship to Student:</label>
+          <input type="text" name="Relationshiptostudent"  />
+        </li>
+        <br />
+        <li>
+          <label>Contact Number:</label>
+          <input type="number" name="phoneNumber"  id="number"/>
+        </li>
+        <br />
+        <li>
+          <label>Email Address:</label>
+          <input type="email" name="Emailaddress"  id="
+          email"/>
+        </li>
+        <br />
+        <li>
+          <label>Occupation:</label>
+          <input type="text" name="Occupation" />
+        </li>
+        <br />
+        <li>
+          <label>Residental Address(if different from student):</label>
+
+          <textarea  id="area"></textarea>
+        </li>
+        <br />
+      </ul>
+    </div>
+    <div>
+      <u><h3>Previous School Details</h3></u>
+      <br />
+      <ul>
+        <li>
+          <label>Name of Previous School:</label>
+          <input type="text" name="Previousschool"  />
+        </li>
+        <li>
+          <label>School Address:</label>
+
+          <textarea  id="area"></textarea>
+        </li>
+        <br />
+        <li>
+          <label>City:</label>
+          <input type="text" name="City" />
+          <label>State:</label>
+          <input type="text" name="State" />
+          <label>Zip:</label>
+          <input type="number" name="Zip" />
+        </li>
+        <br />
+        <li>
+          <label>Dates Attended:</label> <input type="date" name="date" /> To
+          <input type="date" name="date" />
+        </li>
+        <br />
+        <li>
+          <label>Reason For Leaving:</label>
+          <input type="text" name="reasonforleave" />
+        </li>
+      </ul>
+    </div>
+    <div>
+      <u><h3>Emergency Contact Information</h3></u>
+      <li>
+        <label>Emergency Contact Number:</label>
+        <input type="number" name="phoneNumber" />
+      </li>
+    </div>
+    <br />
+    <center>
+      <button id="submit">Submit</button>
+      <button id="reset">Reset</button>
+      <button id="print">Print Page</button>
+    </center>
+  </body>
+<script src="script.js"></script>
+</html>
